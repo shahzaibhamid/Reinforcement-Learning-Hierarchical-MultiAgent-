@@ -1,0 +1,15 @@
+function S = index2S_MA_Local(i)
+S(1) = rem(floor2(i,243*63*36*2),2);
+S(2) = rem(floor2(i,243*63*36),2)+1;
+S(3) = rem(floor2(i,243*63*18),2);
+S(4) = rem(floor2(i,243*63*9),2);
+S(5) = rem(floor2(i,243*63*3),3);
+S(6) = rem(floor2(i,243*63),3);
+S(7) = rem(floor2(i,243*9),7)+1;
+S(8) = rem(floor2(i,243*3),3)+1;
+S(9) = rem(floor2(i,243),3)+1;
+S(10) = rem(floor2(i,81),3)+1;
+S(11) = rem(floor2(i,27),3)+1;
+S(12) = rem(floor2(i,9),3)+1;
+S(13) = rem(floor2(i,3),3)+1;
+S(14) = rem(floor2(i,1),3)+1;
